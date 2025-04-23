@@ -33,7 +33,7 @@ function App() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.3 }}
                 >
-                    Portal Access Login
+                    Portal Login Access
                 </motion.h2>
 
                 <input type="text" placeholder="Username Or Email" />
