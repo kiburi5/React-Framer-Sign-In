@@ -36,7 +36,7 @@ function App() {
                     Portal Access Login
                 </motion.h2>
 
-                <input type="text" placeholder="Username" />
+                <input type="text" placeholder="Username Or Email" />
                 <input type="password" placeholder="Password" />
 
                 <motion.button
