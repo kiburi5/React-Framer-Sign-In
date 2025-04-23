@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+.futuristic-wrapper {
+  background: radial-gradient(ellipse at bottom, #090e22, #000);
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Orbitron', sans-serif;
+  color: #0ff;
+}
+
+/* Upgraded Orbit Ring */
+.orbit-ring {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border: 2px dashed rgba(0, 255, 255, 0.8);
+  border-radius: 50%;
+  z-index: 1;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.6),
+  0 0 60px rgba(0, 255, 255, 0.4),
+  0 0 90px rgba(0, 255, 255, 0.2);
+  animation: blinkPulse 2s infinite alternate;
+}
+
+@keyframes blinkPulse {
+  0% {
+    opacity: 0.6;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5),
+    0 0 40px rgba(0, 255, 255, 0.3),
+    0 0 60px rgba(0, 255, 255, 0.1);
+  }
+  100% {
+    opacity: 1;
+    box-shadow: 0 0 40px rgba(0, 255, 255, 1),
+    0 0 80px rgba(0, 255, 255, 0.8),
+    0 0 120px rgba(0, 255, 255, 0.5);
+  }
+}
+
+.glow-grid {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: repeating-linear-gradient(
+          to right,
+          rgba(0, 255, 255, 0.05) 0 1px,
+          transparent 1px 100%
+  ),
+  repeating-linear-gradient(
+          to bottom,
+          rgba(0, 255, 255, 0.05) 0 1px,
+          transparent 1px 100%
+  );
+  z-index: 0;
+}
+
+.glass-form {
+  position: relative;
+  z-index: 10;
+  background: rgba(0, 255, 255, 0.05);
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  border-radius: 16px;
+  backdrop-filter: blur(20px);
+  padding: 40px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.2);
+}
+
+.glass-form h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #0ff;
+}
+
+.glass-form input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  color: #0ff;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.glass-form input:focus {
+  box-shadow: 0 0 12px #0ff;
+}
+
+.glass-form button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background: transparent;
+  border: 2px solid #0ff;
+  color: #0ff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.glass-form button:hover {
+  background: #0ff;
+  color: black;
+}
+
+/* 🔥 Futuristic Swap Text Styles 🔥 */
+.swap-text-wrapper {
+  position: relative;
+  height: 30px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  z-index: 10;
+}
+
+.swap-text {
+  position: absolute;
+  white-space: nowrap;
+  color: #0ff;
+  text-align: center;
+  text-shadow: 0 0 3px #0ff, 0 0 6px #0ff, 0 0 10px #0ff;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* Glow Animation */
+.futuristic-glow {
+  animation: glowTrail 2s infinite alternate;
+}
+
+@keyframes glowTrail {
+  from {
+    text-shadow:
+            0 0 5px #0ff,
+            0 0 10px #0ff,
+            0 0 15px #0ff;
+  }
+  to {
+    text-shadow:
+            0 0 10px #0ff,
+            0 0 20px #0ff,
+            0 0 30px #0ff;
+  }
+}
