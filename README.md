@@ -1,8 +1,7 @@
 # React + Vite
 
 ## 🚀Check Out Live Demo here
-
-Check out the live version of the project here: [Live Form](https://react-framer-sign-in-form.vercel.app)
+[Live Form](https://react-framer-sign-in-form.vercel.app)
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
